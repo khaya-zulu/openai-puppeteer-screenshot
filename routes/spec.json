@@ -1,0 +1,36 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Puppeteer screenshot API",
+    "description": "Get a screenshot of a website from a URL",
+    "version": "v1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "operationId": "screenshot",
+        "description": "Takes a screenshot of a website from a URL and returns a base64 encoded image",
+        "responses": {
+          "200": {
+            "description": "A base64 encoded image",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "base64": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

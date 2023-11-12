@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Puppeteer screenshot service",
+  "name_for_model": "puppeteer-screenshot-service",
+  "description_for_human": "Take a screenshot of a website, by just providing the URL.",
+  "description_for_model": "Take a screenshot of a website, by using a URL provided by the user.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "http://localhost:3000/openapi.yaml"
+  },
+  "logo_url": "http://localhost:3000/logo.png",
+  "contact_email": "khaya@upshot.dev",
+  "legal_info_url": "http://www.example.com/legal"
+}

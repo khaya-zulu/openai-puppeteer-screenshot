@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "scripts": {
+    "prepare": "nitropack prepare",
+    "dev": "nitropack dev",
+    "build": "nitropack build",
+    "preview": "node .output/server/index.mjs",
+    "tunnel": "cloudflared tunnel --url http://localhost:300"
+  },
+  "dependencies": {
+    "nitropack": "latest",
+    "puppeteer": "21.5.1"
+  }
+}
